@@ -49,36 +49,20 @@
             </nav>
         </div>
     </header>
+    <div id="user-status-display" style="text-align: right; padding: 5px 20px; background-color: #e9ecef;">
+        Welcome, Guest! <a href="/index.html#login-form-section">Login</a> | <a href="/index.html#register-form-section">Register</a>
+    </div>
 
     <main class="container">
         <section id="shopping-cart">
             <h2>Your Shopping Cart</h2>
             <div id="cart-items">
-                <!-- Placeholder for cart items -->
-                <div class="cart-item">
-                    <img src="static/images/placeholder.png" alt="Product Image">
-                    <div class="cart-item-details">
-                        <h3>Product A</h3>
-                        <p>Price: $10.00</p>
-                        <p>Quantity: 1</p>
-                    </div>
-                    <p>$10.00</p>
-                </div>
-                <div class="cart-item">
-                    <img src="static/images/placeholder.png" alt="Product Image">
-                    <div class="cart-item-details">
-                        <h3>Product B</h3>
-                        <p>Price: $12.50</p>
-                        <p>Quantity: 2</p>
-                    </div>
-                    <p>$25.00</p>
-                </div>
-                <p style="text-align:center; margin-top: 20px;">Your cart will update here as you add items.</p>
+                <!-- Cart items will be loaded here by JavaScript -->
             </div>
 
             <div class="cart-total">
-                <h3>Total: $35.00</h3>
-                <a href="#" class="checkout-btn">Proceed to Checkout</a>
+                <h3>Total: $<span id="cart-total-amount">0.00</span></h3>
+                <a href="#" class="checkout-btn">Proceed to Checkout</a> 
             </div>
         </section>
     </main>

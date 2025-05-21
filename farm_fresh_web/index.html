@@ -20,10 +20,45 @@
         </div>
     </header>
 
+    <div id="user-status-display" style="text-align: right; padding: 5px 20px; background-color: #e9ecef;">
+        Welcome, Guest! <a href="#login-form-section">Login</a> | <a href="#register-form-section">Register</a>
+        <!-- Logout link will be added here by JS when user is logged in -->
+    </div>
+
     <main class="container">
         <section id="hero">
             <h2>Welcome to Farm Fresh!</h2>
             <p>Your one-stop shop for the freshest agricultural products.</p>
+        </section>
+
+        <section id="login-form-section" style="padding: 20px; border: 1px solid #ccc; margin-bottom: 20px; background-color: #fff; border-radius: 8px;">
+            <h2>Login</h2>
+            <form id="login-form-actual"> <!-- Changed ID to avoid conflict with section ID -->
+                <div>
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" name="username" required style="width: 98%; padding: 8px; margin-bottom: 10px;">
+                </div>
+                <div>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required style="width: 98%; padding: 8px; margin-bottom: 10px;">
+                </div>
+                <button type="submit" style="padding: 10px 15px;">Login</button>
+            </form>
+        </section>
+
+        <section id="register-form-section" style="padding: 20px; border: 1px solid #ccc; margin-bottom: 20px; background-color: #fff; border-radius: 8px;">
+            <h2>Register</h2>
+            <form id="register-form-actual"> <!-- Changed ID to avoid conflict with section ID -->
+                <div>
+                    <label for="register-username">Username:</label>
+                    <input type="text" id="register-username" name="username" required style="width: 98%; padding: 8px; margin-bottom: 10px;">
+                </div>
+                <div>
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" name="password" required style="width: 98%; padding: 8px; margin-bottom: 10px;">
+                </div>
+                <button type="submit" style="padding: 10px 15px;">Register</button>
+            </form>
         </section>
 
         <section id="featured-products">
